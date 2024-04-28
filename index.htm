@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Announcement banner -->
+  <div class="announcement-banner" id="announcementBanner" onclick="toggleMusic()">
+    <span id="announcementText">Welcome mga angkol!</span>
+  </div>
+
   <!-- Background music -->
   <audio id="backgroundMusic" autoplay loop>
     <source src="background_music.mp3" type="audio/mpeg">
@@ -14,7 +19,7 @@
     <source src="background_music.wav" type="audio/wav">
     Your browser does not support the audio element.
   </audio>
-
+  
   <div class="background" id="background" onclick="toggleMusic()">
     <!-- Your background photo here with cartoon bodies -->
     <img src="background_photo.png" alt="Background with cartoon bodies">

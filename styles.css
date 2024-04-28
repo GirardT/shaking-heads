@@ -7,21 +7,19 @@
 .shaking-head {
   position: absolute;
   /* Adjust the top and left positions as needed */
-  top: 100px; 
-  left: 100px; 
-  width: 100px;
-  height: 100px;
+  top: 20%; /* Example percentage value for top position */
+  left: 10%; /* Example percentage value for left position */
+  width: 100px; /* Example width value */
+  height: 100px; /* Example height value */
+  border-radius: 50%; /* Ensure circular shape */
+  overflow: hidden; /* Ensure circular shape */
+  animation: shake 0.5s infinite alternate; /* Added animation property */
 }
 
 .shaking-head img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.shake {
-  animation: shake 0.5s infinite alternate;
+  object-fit: cover; /* Adjust to your preference */
 }
 
 @keyframes shake {
@@ -30,5 +28,15 @@
   }
   to {
     transform: rotate(-10deg);
+  }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .shaking-head {
+    top: 30%; /* Adjust for smaller screens */
+    left: 5%; /* Adjust for smaller screens */
+    width: 80px; /* Adjust for smaller screens */
+    height: 80px; /* Adjust for smaller screens */
   }
 }

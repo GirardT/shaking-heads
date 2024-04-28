@@ -7,16 +7,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Background music -->
+  <audio autoplay loop>
+    <source src="background_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
   <div class="background">
     <!-- Your background photo here with cartoon bodies -->
     <img src="background_photo.png" alt="Background with cartoon bodies">
-    <div class="shaking-head" id="head1" style="top:115px; left:670px">
+    <div class="shaking-head" id="head1" style="top:115px; left:670px; animation: shake 1.0s infinite alternate; animation-delay: 0.5s;">
       <img src="head_photo_1.png" alt="Head 1">
     </div>
-    <div class="shaking-head" id="head2">
+    <div class="shaking-head" id="head2" style="top:145px; left:320px; animation: shake 0.2s infinite alternate; animation-delay: 0.8s;">
       <img src="head_photo_2.png" alt="Head 2">
     </div>
-    <!-- Add more shaking heads as needed -->
+    <div class="shaking-head" id="head3" style="top:130px; left:970px; animation: shake 0.3s infinite alternate; animation-delay: 1.1s;">
+      <img src="head_photo_3.png" alt="Head 3">
+    </div>
+    <div class="shaking-head" id="head4" style="top:260px; left:1255px; animation: shake 0.1s infinite alternate; animation-delay: 0.3s;">
+      <img src="head_photo_4.png" alt="Head 4">
+    </div>
+    <div class="shaking-head" id="head5" style="top:325px; left:925px; animation: shake 0.6s infinite alternate; animation-delay: 0.7s;">
+      <img src="head_photo_5.png" alt="Head 5">
+    </div>
   </div>
 </body>
 </html>

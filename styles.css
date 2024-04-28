@@ -30,13 +30,3 @@
     transform: rotate(-10deg);
   }
 }
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .shaking-head {
-    top: 30%; /* Adjust for smaller screens */
-    left: 5%; /* Adjust for smaller screens */
-    width: 80px; /* Adjust for smaller screens */
-    height: 80px; /* Adjust for smaller screens */
-  }
-}
